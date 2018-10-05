@@ -10,15 +10,21 @@
   flex-direction: column;
   width: 50%;
   align-items: center;
+  -webkit-box-shadow: 0px 3px 54px 8px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 3px 54px 8px rgba(0,0,0,0.28);
+  box-shadow: 0px 3px 54px 8px rgba(0,0,0,0.28);
+  border-radius: 5px;
 }
 
 .input {
   margin-top: 25px;
   width: 50%;
+  /* box-shadow: 0px 3px 4px .5px rgba(0,0,0,0.28) */
 }
 
 .submit-button {
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .letter-display-container {
@@ -36,3 +42,12 @@
   height: 20px;
   margin-bottom: 10px;
 }
+
+.custom-modal {
+  width: 350px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+

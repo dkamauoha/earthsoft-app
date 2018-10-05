@@ -5,8 +5,6 @@ const logic = {
         return x + y;
     },
     getLetterData: (str) => {
-        let lowerCaseLongString = str.toLowerCase();
-        let strArr = lowerCaseLongString.split('');
         let testArr = [
           {id: 1, letter: 'a', number: 0},
           {id: 2, letter: 'b', number: 0},
@@ -34,7 +32,9 @@ const logic = {
           {id: 24, letter: 'x', number: 0},
           {id: 25, letter: 'y', number: 0},
           {id: 26, letter: 'z', number: 0},
-        ]
+        ];
+        let lowerCaseLongString = str.toLowerCase();
+        let strArr = lowerCaseLongString.split('');
         strArr.forEach(e => {
           let index = testArr.findIndex(el => e === el.letter);
           if (index !== -1) {
